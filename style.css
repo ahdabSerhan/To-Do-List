@@ -1,0 +1,126 @@
+
+  body{
+    min-height:100%;
+    font-family: Bad Script;
+background: linear-gradient(to bottom, rgb(65, 63, 64), rgb(27, 26, 26), rgb(68, 65, 67)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+h1{
+    text-transform: uppercase;
+    color:white;
+    margin: 0;
+    padding:10px 28px;
+    font-weight: normal;
+}
+
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+   .formAddToDo{
+      display:flex;
+      flex-direction: row;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  
+   span.checked {
+    color: rgb(73, 69, 69);
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+     span.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+  }
+  
+.close:hover {
+    background-color: #800c4f;
+    color: white;
+  }
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    background-color: grey;
+    color:rgb(240, 179, 13);
+    margin: 0;
+    padding:17px 28px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+  .close:hover {
+    background-color: #971f16;
+    color: white;
+  }
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 15px 50px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+
+    transition: width 0.4s ease-in-out; 
+
+    font-family: Bad Script;
+    font-size: 30px;
+  }
+      input[type="submit"]{
+       background-color: grey;
+      position: relative;
+      font-size: 50px;
+      color:rgb(240, 179, 13);
+      margin: 0;
+      padding:10px 28px;
+      font-weight: normal;
+  }
+
