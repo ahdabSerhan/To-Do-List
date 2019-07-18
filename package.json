@@ -1,0 +1,32 @@
+{
+  "name": "todo-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dom.js",
+  "directories": {
+    "test": "./tests/test"
+  },
+  "scripts": {
+    "test": "node ./tests/test.js | tap-spec",
+    "monitor-tests": "nodemon ./tests/test.js | tap-spec",
+    "coverage": "nyc npm run test",
+    "report": "nyc report --reporter=lcov --reporter=text"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facn6/todo-GAS.git"
+  },
+  "keywords": [],
+  "author": "Sam Harris <s.w.h@live.co.uk> (https://samharris.eu)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facn6/todo-GAS/issues"
+  },
+  "homepage": "https://github.com/facn6/todo-GAS#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  }
+}
